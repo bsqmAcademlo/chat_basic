@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: hsl(250, 16%, 15%);
+    color: #ffe2e2;
+    padding: 1rem;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#formChat {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 0.5rem;
+}
+
+.formChat__input {
+    padding: 10px 5px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.formChat__submit {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.messages {
+    margin-top: 1rem;
+    background-color: hsl(250, 16%, 25%);
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.messages li {
+    padding: 0.5rem;
+    text-align: end;
+}
+
+.messages li:nth-child(odd) {
+    background-color: hsl(250, 16%, 35%);
+    border-radius: 5px;
+    text-align: start;
+}
