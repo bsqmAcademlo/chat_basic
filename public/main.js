@@ -1,4 +1,5 @@
-const socket = io("http://localhost:8081");
+// const socket = io("http://localhost:8081");
+const socket = io("https://bschat.onrender.com");
 
 document.querySelector("#formChat").addEventListener("submit", (e) => {
     e.preventDefault();
